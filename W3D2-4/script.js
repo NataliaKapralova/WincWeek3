@@ -5,7 +5,7 @@ setTimeout(() => resolve(message), randomMillisecond);
 return succeedingPromise;
 };
 
-const getFailingPromise = (errorMessage, randomMillisecond) => {
+const getFailingPromise = (errorMessage,randomMillisecond) => {
     const failingPromise = new Promise ((resolve, rejects) => { 
         setTimeout(() => rejects(errorMessage),randomMillisecond); 
         });
